@@ -1,0 +1,34 @@
+Algoritmo "Tipos de operações lógicas "
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 03/05/2020
+Var
+// Seção de Declarações das variáveis
+   nota01, nota02, media: real
+   nome: caractere
+   passou: logico
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   passou:= falso
+   escreval("digite o nome do Aluno:")
+   leia(nome)
+   escreval("digite a nota 1 do Aluno:")
+   leia(nota01)
+   escreval("digite a nota 2 do Aluno:")
+   leia(nota02)
+   media := (nota01 + nota02) / 2
+
+   se media >= 50 entao
+      passou:= verdadeiro
+   fimse
+
+   se (passou) && (media >=50 || media <=70) entao
+      escreval(nome," Aprovado")
+   senao
+        escreval(nome," Reprovado")
+   fimse
+
+
+Fimalgoritmo
